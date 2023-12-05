@@ -21,15 +21,15 @@
       <form class="row g-3" netlify>
         <div class="col-md-6">
           <label for="nombre">Nombre</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellidos">
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellidos">
         </div>
         <div class="col-md-6">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
         </div>
         <div class="col-12">
           <label for="tipo">Tipo de solicitud</label>
-          <select class="form-select" id="tipo">
+          <select class="form-select" id="tipo" name="tipo">
             <option selected>Selecciona un tipo de solicitud</option>
             <option value="info">Información general</option>
             <option value="inscripcion">Inscripción</option>
@@ -39,7 +39,7 @@
         </div>
         <div class="col-12">
           <label for="mensaje">Mensaje</label>
-          <textarea class="form-control" placeholder="Escribe los detalles de tu solicitud" id="mensaje" style="height: 100px"></textarea>
+          <textarea class="form-control" placeholder="Escribe los detalles de tu solicitud" id="mensaje" name="mensaje" style="height: 100px"></textarea>
         </div>
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Enviar</button>
