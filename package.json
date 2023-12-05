@@ -43,5 +43,11 @@
     "posthtml-include": "^1.7.4",
     "rimraf": "^5.0.1",
     "sharp": "0.31.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.2",
+    "material-icons": "^1.13.12"
   }
 }

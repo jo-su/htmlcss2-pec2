@@ -1,0 +1,23 @@
+.participant-card {
+    text-align: center;
+    width: 80dvw;
+    max-width: 500px;
+    aspect-ratio: 10/8;
+    border: none;
+
+    &__image{
+        border-radius: $space-half;
+        height: 100%;
+        object-fit: cover;
+    }
+    @media screen and (min-width: $screen-sm-min) {
+        width: 35dvw;
+    }
+    @media screen and (min-width: $screen-md-min) {
+        width: 25dvw;
+    }
+    @media screen and (min-width: $screen-lg-min) {
+        width: 20dvw;
+    }
+
+}

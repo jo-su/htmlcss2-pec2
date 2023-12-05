@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid $primary;
+    gap: $space-half;
+    
+
+    @media screen and (min-width: $screen-lg-min) {
+        flex-direction: row;
+    }
+
+    &__pages{
+        display: flex;
+        flex-direction: column;
+        gap: $space-half;
+
+        @media screen and (min-width: $screen-lg-min) {
+            flex-direction: row;
+        }
+    }
+
+    &__social{
+        display: flex;
+        gap: $space-half;
+        flex-wrap: wrap;
+    }
+}

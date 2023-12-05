@@ -1,0 +1,56 @@
+.cta-container{
+    container: cta / inline-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    color: $white;
+}
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    gap: $space-half;
+    background-color: inherit;
+    color: inherit;
+    align-items: center;
+    height: inherit;
+    padding: $space-half;
+    max-width: 80cqw;
+    text-align: center;
+
+    &__title{
+        font-size: min($space-unit, $space-half + 3cqi);
+    }
+
+    &__description{
+        display: none;
+    }
+
+    &__button{
+        display: block;
+        max-width: inherit;
+    }
+}
+
+@container (min-width: 400px) {
+    .cta {
+        &__description{
+            display: block;
+        }
+    }
+}
+
+@container (min-width: 700px) {
+    .cta{
+        gap: $space-unit;
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+.alert:has(.btn-close){
+    .cta__button{
+        display: none;
+    }
+}

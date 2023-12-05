@@ -1,0 +1,7 @@
+.collection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: $space-unit;
+    justify-content: space-around;
+}

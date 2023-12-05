@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Liga de tenis</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+
+    <main class="main mx-5 contacto">
+      <h2 class="main__title">Contacto</h2>
+
+      <div class="alert alert-primary alert-dismissible fade show cta-container" role="alert">
+        <include src="./views/cta_inscription.html"></include>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      <form class="row g-3">
+        <div class="col-md-6 form-floating">
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellidos">
+          <label for="nombre">Nombre</label>
+        </div>
+        <div class="col-md-6 form-floating">
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-12 form-floating">
+          <select class="form-select" id="tipo">
+            <option selected>Selecciona un tipo de solicitud</option>
+            <option value="info">Información general</option>
+            <option value="inscripcion">Inscripción</option>
+            <option value="prensa">Prensa y Medios de comunicación</option>
+            <option value="otro">Otro</option>
+          </select>
+          <label for="tipo">Tipo de solicitud</label>
+        </div>
+        <div class="col-12 form-floating">
+          <textarea class="form-control" placeholder="Escribe los detalles de tu solicitud" id="mensaje" style="height: 100px"></textarea>
+          <label for="mensaje">Mensaje</label>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+
+      
+    </main>
+
+    <include src="./views/footer.html"></include>
+    
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

@@ -1,0 +1,49 @@
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-unit;
+
+    &__head {
+        width: 100dvw;
+        height: 30dvh;
+    }
+
+    &__row {
+        display: flex;
+        gap: $space-half;
+    }
+}
+
+article > :is(p, blockquote, .timeline, .article__row) {
+    width: 70dvw;
+}
+
+.article-head{
+    position: relative;
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-size:cover;
+
+    &__title{
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        text-shadow: $black 3px 2px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.article__row:has(.quote){
+    .quote{
+        flex: 4 0 0;
+    }
+
+    :not(.quote){
+        flex: 5 0 0;
+    }
+}
