@@ -18,16 +18,17 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
 
-      <form class="row g-3">
-        <div class="col-md-6 form-floating">
-          <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellidos">
+      <form class="row g-3" netlify>
+        <div class="col-md-6">
           <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellidos">
         </div>
-        <div class="col-md-6 form-floating">
-          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        <div class="col-md-6">
           <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
         </div>
-        <div class="col-12 form-floating">
+        <div class="col-12">
+          <label for="tipo">Tipo de solicitud</label>
           <select class="form-select" id="tipo">
             <option selected>Selecciona un tipo de solicitud</option>
             <option value="info">Información general</option>
@@ -35,11 +36,10 @@
             <option value="prensa">Prensa y Medios de comunicación</option>
             <option value="otro">Otro</option>
           </select>
-          <label for="tipo">Tipo de solicitud</label>
         </div>
-        <div class="col-12 form-floating">
-          <textarea class="form-control" placeholder="Escribe los detalles de tu solicitud" id="mensaje" style="height: 100px"></textarea>
+        <div class="col-12">
           <label for="mensaje">Mensaje</label>
+          <textarea class="form-control" placeholder="Escribe los detalles de tu solicitud" id="mensaje" style="height: 100px"></textarea>
         </div>
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Enviar</button>
