@@ -11,7 +11,13 @@
 
     &__row {
         display: flex;
+        flex-direction: column;
         gap: $space-half;
+
+        @media screen and (min-width: $screen-sm-min) {
+            flex-direction: row;
+        }
+
     }
 }
 
