@@ -3,15 +3,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $primary;
+    background-color: $vibrant;
     color: $white;
+
+    &--nobutton{
+        .cta__button{
+            display: none;
+        }
+    }
 }
 
 .cta{
     display: flex;
     flex-direction: column;
     gap: $space-half;
-    background-color: inherit;
     color: inherit;
     align-items: center;
     height: inherit;
@@ -46,11 +51,5 @@
         gap: $space-unit;
         flex-direction: row;
         text-align: left;
-    }
-}
-
-.alert:has(.btn-close){
-    .cta__button{
-        display: none;
     }
 }

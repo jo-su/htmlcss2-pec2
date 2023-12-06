@@ -4,6 +4,7 @@ $font-family-sans-serif: "Josefin Sans", sans-serif;
 $font-family-serif: "Hedvig Letters Sans", serif;
 
 $primary: rgb(73, 152, 26);
+$vibrant: color(display-p3 0.15 0.61 0.17);
 $secondary: #ffffff;
 $tertiary: rgb(21, 31, 25);
 $disabled: rgb(149, 149, 149);
@@ -38,11 +39,14 @@ $screen-xl-min: 1200px;
 
 
 //Bootstrap customizations
-$navbar-light-active-color:         $primary;
-$navbar-light-brand-color:          $navbar-light-active-color;
-$navbar-light-brand-hover-color:    $navbar-light-active-color;
-$btn-close-color:            $white;
+$min-contrast-ratio: 1;
+$navbar-light-active-color: $primary;
+$navbar-light-brand-color: $navbar-light-active-color;
+$navbar-light-brand-hover-color: $navbar-light-active-color;
+$btn-close-color: $white;
+$btn-color: $white;
 $theme-colors: (
-  "primary":    $primary
+  "primary": $primary,
+  "secondary": $secondary
 );
 

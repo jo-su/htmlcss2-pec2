@@ -5,7 +5,7 @@
     gap: $space-unit;
 
     &__head {
-        width: 100dvw;
+        width: 100%;
         height: 30dvh;
     }
 
@@ -29,8 +29,8 @@ article > :is(p, blockquote, .timeline, .article__row) {
     &__title{
         position: absolute;
         background: rgba(0, 0, 0, 0.4);
-        width: 100%;
-        height: 100%;
+        width: inherit;
+        height: inherit;
         text-shadow: $black 3px 2px 20px;
         display: flex;
         justify-content: center;

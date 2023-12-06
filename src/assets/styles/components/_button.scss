@@ -4,7 +4,7 @@
     border-radius: $space-half;
     border: 1px solid $primary;
     gap: $space-quarter;
-    color: $text;
+    //color: $text;
     font-weight: 500;
     text-align: center;
     justify-content: center;
@@ -24,12 +24,4 @@
     &--col{
         flex-direction: column;
     }
-}
-
-.btn-primary {
-    @include button-variant($primary, darken($primary, 7.5%), #ffffff, lighten($primary,5%), lighten($primary, 10%), #ffffff);
-  }
-  
-.btn-outline-primary {
-    @include button-outline-variant($primary, #ffffff, lighten($primary,5%), $primary);
 }
